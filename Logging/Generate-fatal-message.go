@@ -1,16 +1,14 @@
 package main
 
 import (
-   "fmt"
-   "log"
+	"fmt"
+	"log"
 )
 
 func main() {
-   fmt.Println("Before fatal error")
+	fmt.Println("Before fatal error")
 
-   log.Fatalln("Died here")
+	log.Fatalln("Died here")
 
-   fmt.Println("After fatal error
+	fmt.Println("After fatal error")
 }
-
-

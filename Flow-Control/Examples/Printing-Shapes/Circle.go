@@ -16,7 +16,7 @@ func main() {
 			a := math.Abs(float64(radius - x + 1))
 			b := math.Abs(float64(radius - y + 1))
 			c := int(math.Floor(math.Sqrt((a*a)+(b*b)) + fudge))
-			if c < radius {
+			if c > radius {
 				fmt.Print("  ")
 			} else {
 				fmt.Print("* ")

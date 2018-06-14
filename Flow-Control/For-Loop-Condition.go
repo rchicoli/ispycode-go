@@ -9,7 +9,7 @@ func main() {
 
 	for valid {
 
-		if i <= 5 {
+		if i >= 5 {
 			valid = false
 		}
 

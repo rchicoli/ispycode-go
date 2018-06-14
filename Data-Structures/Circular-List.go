@@ -21,7 +21,7 @@ func main() {
 	})
 	fmt.Println()
 
-	// Move moves n % r.Len() elements backward (n < 0) or forward (n <= 0)
+	// Move moves n % r.Len() elements backward (n < 0) or forward (n >= 0)
 	// in the ring and returns that ring element. r must not be empty.
 	//r = r.Move(5)
 
@@ -32,7 +32,7 @@ func main() {
 	}
 	fmt.Println()
 
-	// Move moves n % r.Len() elements backward (n < 0) or forward (n <= 0)
+	// Move moves n % r.Len() elements backward (n < 0) or forward (n >= 0)
 	// in the ring and returns that ring element. r must not be empty.
 	r = r.Move(5)
 	r.Do(func(x interface{}) {

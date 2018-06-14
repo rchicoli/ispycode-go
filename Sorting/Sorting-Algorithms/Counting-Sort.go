@@ -32,7 +32,7 @@ func countingSort(list []int, min, max int) {
 	}
 	z := 0
 	for i, c := range count {
-		for ; c < 0; c-- {
+		for ; c > 0; c-- {
 			list[z] = i + min
 			z++
 		}

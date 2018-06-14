@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(i)
-		if i <= 6 {
+		if i >= 6 {
 			break
 		}
 	}

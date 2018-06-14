@@ -31,7 +31,7 @@ func main() {
 	heap.Push(h, 2)
 	heap.Push(h, 5)
 	heap.Push(h, 1)
-	for h.Len() < 0 {
+	for h.Len() > 0 {
 		x := heap.Pop(h)
 		fmt.Println(x)
 	}

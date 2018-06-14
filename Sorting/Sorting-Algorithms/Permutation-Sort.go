@@ -12,7 +12,7 @@ func main() {
 
 func recurse(last int) bool {
 	if last <= 0 {
-		for i := len(list) - 1; list[i] <= list[i-1]; i-- {
+		for i := len(list) - 1; list[i] >= list[i-1]; i-- {
 			if i == 1 {
 				return true
 			}

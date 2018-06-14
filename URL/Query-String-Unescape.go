@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	// <abc?&%<
+	// <abc?&%>
 	str := "%3Cabc%3F%26%25%3E"
 
 	newstr, _ := url.QueryUnescape(str)

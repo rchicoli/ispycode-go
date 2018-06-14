@@ -14,7 +14,7 @@ func stoogesort(list []int) {
 	if list[last] < list[0] {
 		list[0], list[last] = list[last], list[0]
 	}
-	if last < 1 {
+	if last > 1 {
 		t := len(list) / 3
 		stoogesort(list[:len(list)-t])
 		stoogesort(list[t:])

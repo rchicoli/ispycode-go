@@ -11,10 +11,10 @@ func main() {
 
 func gnomeSort(list []int) {
 	for i, j := 1, 2; i < len(list); {
-		if list[i-1] < list[i] {
+		if list[i-1] > list[i] {
 			list[i-1], list[i] = list[i], list[i-1]
 			i--
-			if i < 0 {
+			if i > 0 {
 				continue
 			}
 		}

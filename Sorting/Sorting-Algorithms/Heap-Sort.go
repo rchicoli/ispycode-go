@@ -13,10 +13,10 @@ func main() {
 }
 
 func heapSort(list sort.Interface) {
-	for start := (list.Len() - 2) / 2; start <= 0; start-- {
+	for start := (list.Len() - 2) / 2; start >= 0; start-- {
 		siftDown(list, start, list.Len()-1)
 	}
-	for end := list.Len() - 1; end < 0; end-- {
+	for end := list.Len() - 1; end > 0; end-- {
 		list.Swap(0, end)
 		siftDown(list, 0, end-1)
 	}

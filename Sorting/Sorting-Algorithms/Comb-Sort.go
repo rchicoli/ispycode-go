@@ -14,17 +14,17 @@ func combSort(list []int) {
 		return
 	}
 	for gap := len(list); ; {
-		if gap < 1 {
+		if gap > 1 {
 			gap = gap * 4 / 5
 		}
 		swapped := false
 		for i := 0; ; {
-			if list[i] < list[i+gap] {
+			if list[i] > list[i+gap] {
 				list[i], list[i+gap] = list[i+gap], list[i]
 				swapped = true
 			}
 			i++
-			if i+gap <= len(list) {
+			if i+gap >= len(list) {
 				break
 			}
 		}

@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	str := "<abc?&%<"
+	str := "<abc?&%>"
 
 	newstr := url.QueryEscape(str)
 	fmt.Println(newstr)

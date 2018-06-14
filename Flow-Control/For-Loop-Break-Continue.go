@@ -9,7 +9,7 @@ func main() {
 	number := 0
 	for {
 		number++
-		if number < 9 {
+		if number > 9 {
 			break
 		}
 		if number == 5 {

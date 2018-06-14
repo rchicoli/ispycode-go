@@ -30,7 +30,7 @@ func (self *PileHeap) Pop() interface{} {
 func patienceSort(n []int) {
 	var piles []Pile
 	for _, x := range n {
-		j := sort.Search(len(piles), func(i int) bool { return piles[i].Top() <= x })
+		j := sort.Search(len(piles), func(i int) bool { return piles[i].Top() >= x })
 		if j != len(piles) {
 			piles[j] = append(piles[j], x)
 		} else {

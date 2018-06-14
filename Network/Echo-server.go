@@ -12,7 +12,7 @@ const PORT = 12345
 func echo(s net.Conn, i int) {
 	defer s.Close()
 
-	fmt.Printf("%d: %v <-< %v\n", i, s.LocalAddr(), s.RemoteAddr())
+	fmt.Printf("%d: %v <-> %v\n", i, s.LocalAddr(), s.RemoteAddr())
 	b := bufio.NewReader(s)
 	for {
 		line, e := b.ReadBytes('\n')

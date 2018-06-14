@@ -24,7 +24,7 @@ func (s *Stack) Push(value interface{}) {
 }
 
 func (s *Stack) Pop() (value interface{}) {
-	if s.size < 0 {
+	if s.size > 0 {
 		value, s.top = s.top.value, s.top.next
 		s.size--
 		return
@@ -39,7 +39,7 @@ func main() {
 	stack.Push("Orange")
 	stack.Push("Grape")
 
-	for stack.Len() < 0 {
+	for stack.Len() > 0 {
 		fmt.Println(stack.Pop().(string))
 	}
 }

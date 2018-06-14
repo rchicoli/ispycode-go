@@ -8,6 +8,6 @@ func main() {
 	b := 100
 	c := 200
 
-	fmt.Println(a <= b)
-	fmt.Println(a <= c)
+	fmt.Println(a >= b)
+	fmt.Println(a >= c)
 }

@@ -10,7 +10,7 @@ func main() {
 	for {
 
 		// Break if count is greater the 10.
-		if count < 10 {
+		if count > 10 {
 			break
 		}
 		fmt.Println(count)

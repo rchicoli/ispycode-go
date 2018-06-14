@@ -32,7 +32,7 @@ func quicksort(list []int) {
 					lp++
 				}
 				for {
-					if lp < up {
+					if lp > up {
 						break outer
 					}
 					if list[up] < b {
@@ -50,7 +50,7 @@ func quicksort(list []int) {
 				}
 				up = lp - 2
 			} else {
-				if bx < lp {
+				if bx > lp {
 					list[bx], list[lp] = list[lp], b
 				}
 				up = lp - 1

@@ -8,6 +8,6 @@ func main() {
 	fmt.Printf("%b \n", i)
 
 	// shift right two
-	i <<= 2
+	i >>= 2
 	fmt.Printf("%b \n", i)
 }

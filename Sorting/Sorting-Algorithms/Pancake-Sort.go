@@ -12,10 +12,10 @@ func main() {
 type pancake []int
 
 func (a pancake) sort() {
-	for uns := len(a) - 1; uns < 0; uns-- {
+	for uns := len(a) - 1; uns > 0; uns-- {
 		lx, lg := 0, a[0]
 		for i := 1; i <= uns; i++ {
-			if a[i] < lg {
+			if a[i] > lg {
 				lx, lg = i, a[i]
 			}
 		}

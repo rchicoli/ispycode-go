@@ -7,11 +7,11 @@ import (
 
 func main() {
 
-	// pseudo-random float32 betwwen 0.0 -< 1.0
+	// pseudo-random float32 betwwen 0.0 -> 1.0
 	r1 := rand.Float32()
 	fmt.Println(r1)
 
-	// pseudo-random float64 betwwen 0.0 -< 1.0
+	// pseudo-random float64 betwwen 0.0 -> 1.0
 	r2 := rand.Float64()
 	fmt.Println(r2)
 

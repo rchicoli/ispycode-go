@@ -25,7 +25,7 @@ func main() {
 		if guess < mynumber {
 			fmt.Println("Too low.")
 		}
-		if guess < mynumber {
+		if guess > mynumber {
 			fmt.Println("Too high.")
 		}
 		if guess == mynumber {

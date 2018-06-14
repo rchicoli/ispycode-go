@@ -14,7 +14,7 @@ func cocktailSort(list []int) {
 	for {
 		swapped := false
 		for i := 0; i < last; i++ {
-			if list[i] < list[i+1] {
+			if list[i] > list[i+1] {
 				list[i], list[i+1] = list[i+1], list[i]
 				swapped = true
 			}
@@ -23,8 +23,8 @@ func cocktailSort(list []int) {
 			return
 		}
 		swapped = false
-		for i := last - 1; i <= 0; i-- {
-			if list[i] < list[i+1] {
+		for i := last - 1; i >= 0; i-- {
+			if list[i] > list[i+1] {
 				list[i], list[i+1] = list[i+1], list[i]
 				swapped = true
 			}
